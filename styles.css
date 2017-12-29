@@ -6,6 +6,8 @@
   left: 0px;
 
   text-align: center;
+
+  background-color: gainsboro;
 }
   
 #upper-wrapper {
@@ -14,6 +16,8 @@
   right: 0px;
   bottom: 60%;
   left: 0px;
+
+  animation: 1s ease-in upper-wrapper-anim;
 
   background-color: #005172;
 
@@ -27,6 +31,8 @@
   right: 0px;
   bottom: 0px;
   left: 0px;
+
+  animation: 1s ease-in lower-wrapper-anim;
 
   background-color: gainsboro;
 
@@ -45,4 +51,22 @@
 
   width: 364px; /* 182 364 */
   height: 90px; /* 45 90 */
+
+  opacity: 0;
+  animation: .5s ease .8s forwards logo-anim;
+}
+
+@keyframes upper-wrapper-anim {
+  from { bottom: 100%; }
+  to { bottom: 60%; }
+}
+
+@keyframes lower-wrapper-anim {
+  from { top: 100%; }
+  to { top: 40%; }
+}
+
+@keyframes logo-anim {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
