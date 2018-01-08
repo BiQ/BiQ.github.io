@@ -35893,7 +35893,7 @@ module.exports = navigator && navigator.userAgent || '';
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-
+/* WEBPACK VAR INJECTION */(function(process) {
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -35961,6 +35961,9 @@ var Inquirer = function (_React$Component) {
   _createClass(Inquirer, [{
     key: 'render',
     value: function render() {
+
+      console.log('process', process);
+
       var _state = this.state,
           loading = _state.loading,
           schema = _state.schema;
@@ -36010,7 +36013,7 @@ var Inquirer = function (_React$Component) {
 
       return _react2.default.createElement(
         _reactRouterDom.BrowserRouter,
-        null,
+        { basename: process.env.PUBLIC_URL },
         _react2.default.createElement(_reactRouterDom.Route, { path: '/', render: function render(routeProps) {
             return _react2.default.createElement(
               'div',
@@ -36044,6 +36047,7 @@ App
     - Split2: EditorGenerated
     - Split3: EditorResult
  */
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(11)))
 
 /***/ }),
 /* 210 */
