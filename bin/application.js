@@ -36009,7 +36009,7 @@ var Inquirer = function (_React$Component) {
       };
 
       return _react2.default.createElement(
-        _reactRouterDom.BrowserRouter,
+        _reactRouterDom.HashRouter,
         null,
         _react2.default.createElement(_reactRouterDom.Route, { path: '/', render: function render(routeProps) {
             return _react2.default.createElement(
@@ -45332,9 +45332,7 @@ var Sidebar = function Sidebar(props) {
       subscriptions = sharedProps.subscriptions;
 
 
-  return _react2.default.createElement(_reactRouterDom.Route, { path: '/:action', children: function children(_ref) {
-      var match = _ref.match;
-
+  return _react2.default.createElement(_reactRouterDom.Route, { path: '/:action', children: function children() {
       return _react2.default.createElement(
         'div',
         { id: 'inquirer-sidebar' },
