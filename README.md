@@ -1,2 +1,2 @@
 # BiQ.github.io
-BiQ io page - redirects to www.biq.dk
+BiQ io page [biq.github.io](biq.github.io) - redirects to www.biq.dk
