@@ -1,2 +1,2 @@
 # BiQ.github.io
-BiQ io page
+BiQ io page - redirects to www.biq.dk
